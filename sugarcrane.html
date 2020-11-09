@@ -24,9 +24,9 @@
             -ms-user-select: none;
             user-select: none;
         }
-        
-        body{
-            background: url(img/wall2.jpg) no-repeat center center fixed; 
+
+        body {
+            background: url(img/wall2.jpg) no-repeat center center fixed;
             -webkit-background-size: cover;
             -moz-background-size: cover;
             -o-background-size: cover;
@@ -34,7 +34,7 @@
             position: fixed;
         }
 
-        div.fixed{
+        div.fixed {
             position: fixed;
         }
 
@@ -59,7 +59,8 @@
             <div class="collapse navbar-collapse" id="navbarCollapse">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item active">
-                        <a class="nav-link" href="index.html">เครื่องเกี่ยวนวดข้าว <span class="sr-only">(current)</span></a>
+                        <a class="nav-link" href="index.html">เครื่องเกี่ยวนวดข้าว <span
+                                class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">รถตัดอ้อยขนาดใหญ่</a>
@@ -75,11 +76,12 @@
             </div>
         </nav>
     </header>
-    
+
 
     <main role="main">
         <div class="w3-container W3-margin">
-            <div class="fixed w3-display-middle w3-white w3-padding-large W3-margin" id="form1" style="width:65% ;display:block">
+            <div class="fixed w3-display-middle w3-white w3-padding-large W3-margin" id="form1"
+                style="width:65% ;display:block">
                 <div class="form-group row">
                     <label for="inputRegion" class="col-md col-form-label">ภูมิภาคที่ต้องการจะเก็บเกี่ยว</label>
                     <div class="col-md">
@@ -121,7 +123,7 @@
 
             <!-- end Page1 display -->
             <div class="fixed w3-display-middle w3-white w3-padding" id="form2" style="width:65% ;display:none">
-                
+
                 <div class="form-group row">
                     <label for="colFormLabel" class="col-md col-form-label">ค่าคนขับและดูแลเครื่อง</label>
                     <div class="col-md">
@@ -153,9 +155,9 @@
                         <input type="number" class="form-control" id="oa" placeholder="ไร่">
                     </div>
                 </div>
-                
-                
-                
+
+
+
                 <div class="w3-bar">
                     <button class="w3-button w3-left w3-light-grey" onclick="backform2()">&laquo; Previous</button>
                     <button class="w3-button w3-right w3-green" onclick="nextform2()">Next &raquo;</button>
@@ -193,10 +195,10 @@
                         <input type="number" class="form-control" id="e" placeholder="บาท/ปี">
                     </div>
                 </div>
-                
+
                 <div class="w3-bar">
-                    <button class="w3-button w3-left w3-light-grey" onclick="backform2()">&laquo; Previous</button>
-                    <button class="w3-button w3-right w3-green" onclick="nextform2()">Next &raquo;</button>
+                    <button class="w3-button w3-left w3-light-grey" onclick="backform3()">&laquo; Previous</button>
+                    <button class="w3-button w3-right w3-green" onclick="nextform3()">Next &raquo;</button>
                 </div>
             </div>
             <div class="fixed w3-display-middle w3-white w3-padding" id="form4" style="width:65% ;display:none">
@@ -231,8 +233,8 @@
                     </div>
                 </div>
                 <div class="w3-bar">
-                    <button class="w3-button w3-left w3-light-grey" onclick="backform3()">&laquo; Previous</button>
-                    <button class="w3-button w3-right w3-green">Submit &raquo;</button>
+                    <button class="w3-button w3-left w3-light-grey" onclick="backform4()">&laquo; Previous</button>
+                    <button class="w3-button w3-right w3-green" onclick="document.location ='result.html'">Submit &raquo;</button>
                 </div>
             </div>
         </div>
@@ -260,6 +262,10 @@
         document.getElementById('form3').style.display = 'block';
         document.getElementById('form2').style.display = 'none';
     }
+    function nextform3() {
+        document.getElementById('form4').style.display = 'block';
+        document.getElementById('form3').style.display = 'none';
+    }
     function backform2() {
         document.getElementById('form2').style.display = 'none';
         document.getElementById('form1').style.display = 'block';
@@ -268,7 +274,11 @@
         document.getElementById('form2').style.display = 'block';
         document.getElementById('form3').style.display = 'none';
     }
-    
+    function backform4() {
+        document.getElementById('form3').style.display = 'block';
+        document.getElementById('form4').style.display = 'none';
+    }
+
 </script>
 
 </html>

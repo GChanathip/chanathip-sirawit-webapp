@@ -18,14 +18,14 @@ function calFarmer(){
     wf = document.getElementById("wf").value;
     ws = document.getElementById("ws").value;
     w = document.getElementById("w").value;
-    zone = document.getElementById("zone").value;
+    region = document.getElementById("region").value;
     mc = 0;
     tsa = 0;
     
     if(region == "northEast"){
         mc = 41.37;
         tsa = 27.00;
-    }else if(zone = "north"){
+    }else if(region == "north"){
         mc = 39.58;
         tsa = 25.99;
     }else{             // ภาคกลาง
