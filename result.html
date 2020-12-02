@@ -7,13 +7,14 @@
     <meta name="description" content="">
     <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
     <meta name="generator" content="Jekyll v4.1.1">
-    <title>Fixed top navbar example · Bootstrap</title>
+    <title>Agriculture</title>
 
     <link rel="canonical" href="https://getbootstrap.com/docs/4.5/examples/navbar-fixed/">
 
     <!-- Bootstrap core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/w3.css">
+    <link rel="stylesheet" href="sugarcrane.html">
 
     <style>
         .bd-placeholder-img {
@@ -23,6 +24,19 @@
             -moz-user-select: none;
             -ms-user-select: none;
             user-select: none;
+        }
+
+        body {
+            background: url(img/wall2.jpg) no-repeat center center fixed;
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
+            position: fixed;
+        }
+
+        div.fixed {
+            position: fixed;
         }
 
         @media (min-width: 768px) {
@@ -63,66 +77,25 @@
             </div>
         </nav>
     </header>
-    <img src="img/wall2.jpg" class="w3-opacity-min " alt="">
+
 
     <main role="main">
-        <div class="w3-container w3-margin">
-            <div class="w3-display-middle w3-white w3-padding-large W3-margin" id="form1"
+        <div class="w3-container W3-margin">
+            <div class="fixed w3-display-middle w3-white w3-padding-large W3-margin" id="form1"
                 style="width:65% ;display:block">
-                <div class="row-md">
-                    <div class="col-md">
-                        <div class="form-group row">
-                            <label for="inputRegion" class="col-md col-form-label">ภูมิภาค</label>
-                            <select name="inputRegion" class="col-md custom-select" id="region">
-                                <option value="1" selected>ภาคกลาง</option>
-                                <option value="2">ภาคตะวันออกเฉียงเหนือ</option>
-                                <option value="2">ภาคตัวะนออก</option>
-                                <option value="3">ภาคเหนือ</option>
-                            </select>
-                        </div>
-                        <div class="col-md">
-                            <div class="form-group row">
-                                <label for="inputRegion" class="col-md col-form-label">จังหวัด</label>
-                                <select name="inputRegion" class="col-md custom-select" id="region">
-                                    <option value="1">เลือกจังหวัด</option>
-                                    <option value="2">ภาคตะวันออกเฉียงเหนือ</option>
-                                    <option value="2">ภาคตัวะนออก</option>
-                                    <option value="3">ภาคเหนือ</option>
-                                </select>
-                            </div>
-                        </div>
-                    </div>
-                </div>
                 <div class="form-group row">
-                    <label for="colFormLabel" class="col-md col-form-label">ราคาเครื่องจักร</label>
+                    <label for="inputRegion" class="col-md col-form-label">ภูมิภาคที่ต้องการจะเก็บเกี่ยว</label>
                     <div class="col-md">
-                        <input type="number" class="form-control" id="p" placeholder="บาท">
-                    </div>
-                </div>
-                <div class="form-group row">
-                    <label for="colFormLabel" class="col-md col-form-label">ราคาที่คาดว่าจะขายได้</label>
-                    <div class="col-md">
-                        <input type="number" class="form-control" id="s" placeholder="บาท">
-                    </div>
-                </div>
-                <div class="form-group row">
-                    <label for="colFormLabel" class="col-md col-form-label">ระยะเวลาการใช้งาน</label>
-                    <div class="col-md">
-                        <input type="number" class="form-control" id="y" placeholder="ปี">
-                    </div>
-                </div>
-                <div class="form-group row">
-                    <label for="colFormLabel" class="col-md col-form-label">อัตราดอกเบี้ย</label>
-                    <div class="col-md">
-                        <input type="number" class="form-control" id="i" placeholder="ร้อยละ">
+                        <p id="pp">test</p>
+                        <p id="ss">test</p>
+                        <p id="yy">test</p>
+                        <p id="ii">test</p>
+                        
                     </div>
                 </div>
                 <div class="w3-bar"></div>
-                <button class="w3-button w3-right w3-green" onclick="nextform1()">Next &raquo;</button>
+                <button class="w3-button w3-right w3-green" onclick="nextForm()">Next &raquo;</button>
             </div>
-
-
-        </div>
     </main>
 </body>
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
@@ -131,14 +104,14 @@
 <script>window.jQuery || document.write('<script src="../assets/js/vendor/jquery.slim.min.js"><\/script>')</script>
 <script src="js/bootstrap.bundle.min.js"></script>
 <script>
-    // function nextForm() {
-    //     var x = document.getElementById("form2");
-    //     if (x.className.indexOf("w3-show") == -1) {
-    //         x.className += " w3-show";
-    //     } else {
-    //         x.className = x.className.replace(" w3-show", "");
-    //     }
-    // }
+    function nextForm() {
+        var x = document.getElementById("form2");
+        if (x.className.indexOf("w3-show") == -1) {
+            x.className += " w3-show";
+        } else {
+            x.className = x.className.replace(" w3-show", "");
+        }
+    }
     function nextform1() {
         document.getElementById('form2').style.display = 'block';
         document.getElementById('form1').style.display = 'none';
@@ -146,6 +119,10 @@
     function nextform2() {
         document.getElementById('form3').style.display = 'block';
         document.getElementById('form2').style.display = 'none';
+    }
+    function nextform3() {
+        document.getElementById('form4').style.display = 'block';
+        document.getElementById('form3').style.display = 'none';
     }
     function backform2() {
         document.getElementById('form2').style.display = 'none';
@@ -155,6 +132,13 @@
         document.getElementById('form2').style.display = 'block';
         document.getElementById('form3').style.display = 'none';
     }
+    function backform4() {
+        document.getElementById('form3').style.display = 'block';
+        document.getElementById('form4').style.display = 'none';
+    }
+
 </script>
+
+
 
 </html>

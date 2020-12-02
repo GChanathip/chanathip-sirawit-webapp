@@ -118,7 +118,7 @@
                     </div>
                 </div>
                 <div class="w3-bar"></div>
-                <button class="w3-button w3-right w3-green" onclick="nextform1()">Next &raquo;</button>
+                <button class="w3-button w3-right w3-green" onclick="nextForm()">Next &raquo;</button>
             </div>
 
             <!-- end Page1 display -->
@@ -230,11 +230,14 @@
                     <label for="colFormLabel" class="col-md col-form-label">ความสามารถในการทำงานของเครื่อง</label>
                     <div class="col-md">
                         <input type="number" class="form-control" id="w" placeholder="ไร่/วัน">
+                        <p id="pp"></p>
+                        <p id="ss"></p>
+                        <p id="yy"></p>
                     </div>
                 </div>
                 <div class="w3-bar">
                     <button class="w3-button w3-left w3-light-grey" onclick="backform4()">&laquo; Previous</button>
-                    <button class="w3-button w3-right w3-green" onclick="document.location ='result.html'">Submit &raquo;</button>
+                    <button class="w3-button w3-right w3-green" onclick="calFarmer()">Submit &raquo;</button>
                 </div>
             </div>
         </div>
@@ -245,40 +248,8 @@
     crossorigin="anonymous"></script>
 <script>window.jQuery || document.write('<script src="../assets/js/vendor/jquery.slim.min.js"><\/script>')</script>
 <script src="js/bootstrap.bundle.min.js"></script>
-<script>
-    function nextForm() {
-        var x = document.getElementById("form2");
-        if (x.className.indexOf("w3-show") == -1) {
-            x.className += " w3-show";
-        } else {
-            x.className = x.className.replace(" w3-show", "");
-        }
-    }
-    function nextform1() {
-        document.getElementById('form2').style.display = 'block';
-        document.getElementById('form1').style.display = 'none';
-    }
-    function nextform2() {
-        document.getElementById('form3').style.display = 'block';
-        document.getElementById('form2').style.display = 'none';
-    }
-    function nextform3() {
-        document.getElementById('form4').style.display = 'block';
-        document.getElementById('form3').style.display = 'none';
-    }
-    function backform2() {
-        document.getElementById('form2').style.display = 'none';
-        document.getElementById('form1').style.display = 'block';
-    }
-    function backform3() {
-        document.getElementById('form2').style.display = 'block';
-        document.getElementById('form3').style.display = 'none';
-    }
-    function backform4() {
-        document.getElementById('form3').style.display = 'block';
-        document.getElementById('form4').style.display = 'none';
-    }
+<script src="js/nextform.js"></script>
 
-</script>
+<script src="js/script1.js"></script> 
 
 </html>
