@@ -70,179 +70,207 @@
                         <a class="nav-link" href="#">เกี่ยวกับเรา</a>
                     </li>
                 </ul>
-                <!-- <form class="form-inline mt-2 mt-md-0">
-        <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
-        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-      </form> -->
             </div>
         </nav>
     </header>
 
 
-    <main role="main">
-        <div class="w3-container W3-margin">
-            <div class="fixed w3-display-middle w3-white w3-padding-large W3-margin" id="form1"
-                style="width:65% ;display:block">
-                <div>
-                    <h1>ค่าใช้จ่ายคงที่</h1>
-                </div>
-                <div class="form-group row">
-                    <label for="colFormLabel" class="col-md col-form-label">ค่าเสื่อมราคา</label>
-                    <div class="col-md">
-                        <p id="calD"></p>
-                    </div>
-                </div>
-                <div class="form-group row">
-                    <label for="colFormLabel" class="col-md col-form-label">ค่าดอกเบี้ย</label>
-                    <div class="col-md">
-                        <p id="calIt"></p>
-                    </div>
-                </div>
-                <div class="form-group row">
-                    <label for="colFormLabel" class="col-md col-form-label">ค่าโรงเก็บเครื่อง</label>
-                    <div class="col-md">
-                        <p id="calG"></p>
-                    </div>
-                </div>
-                <div class="form-group row">
-                    <label for="colFormLabel" class="col-md col-form-label">ค่าภาษี/ประกัน</label>
-                    <div class="col-md">
-                        <p id="calT"></p>
-                    </div>
-                </div>
-                <div class="form-group row">
-                    <label for="colFormLabel" class="col-md col-form-label">ค่าใช้จ่ายอื่นๆ</label>
-                    <div class="col-md">
-                        <p id="calE"></p>
-                    </div>
-                </div>
-                <div class="form-group row">
-                    <label for="colFormLabel" class="col-md col-form-label">รวมค่าใช้จ่ายคงที่</label>
-                    <div class="col-md">
-                        <p id="calSum"></p>
-                    </div>
-                </div>
-                <div class="w3-bar"></div>
-                <button class="w3-button w3-right w3-green" onclick="nextform1()">Next &raquo;</button>
-            </div>
 
-            <!-- end Page1 display -->
-            <div class="fixed w3-display-middle w3-white w3-padding" id="form2" style="width:65% ;display:none">
+    <div class="container">
+            <div class="card-deck mb-3 text-center" >
+                <div class="card mb-4 shadow-sm">
+                    <div class="card-header">
+                        <h4 class="my-0 font-weight-normal">ค่าใช้จ่ายคงที่</h4>
+                    </div>
+                    <div class="card-body">
+                        <h1 class="card-title pricing-card-title"> <small class="text-muted">/ mo</small></h1>
+                        <ul class="list-unstyled mt-3 mb-4">
+                            <li>10 users included</li>
+                            <li>2 GB of storage</li>
+                            <li>Email support</li>
+                            <li>Help center access</li>
+                        </ul>
+                        <!-- Button trigger modal -->
+                        <button type="button" class="btn btn-primary" data-toggle="modal"
+                            data-target="#staticBackdrop1">
+                            แสดงรายละเอียด
+                        </button>
 
-                <div>
-                    <h1>ค่าใช้จ่ายแปลผัน</h1>
-                </div>
-                <div class="form-group row"></div>
-                <div class="form-group row">
-                    <label for="colFormLabel" class="col-md col-form-label">ค่าคนขับและดูแลเครื่อง</label>
-                    <div class="col-md">
-                        <p id="calL"></p>
+                        <!-- Modal -->
+                        <div class="modal fade" id="staticBackdrop1" data-backdrop="static" data-keyboard="false"
+                            tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="staticBackdropLabel">ค่าใช้จ่ายคงที่</h5>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <div class="form-group row">
+                                            <label for="colFormLabel"
+                                                class="col-md col-form-label">ค่าเสื่อมราคา</label>
+                                            <div class="col-md">
+                                                <p id="calD"></p>
+                                            </div>
+                                        </div>
+                                        <div class="form-group row">
+                                            <label for="colFormLabel" class="col-md col-form-label">ค่าดอกเบี้ย</label>
+                                            <div class="col-md">
+                                                <p id="calIt"></p>
+                                            </div>
+                                        </div>
+                                        <div class="form-group row">
+                                            <label for="colFormLabel"
+                                                class="col-md col-form-label">ค่าโรงเก็บเครื่อง</label>
+                                            <div class="col-md">
+                                                <p id="calG"></p>
+                                            </div>
+                                        </div>
+                                        <div class="form-group row">
+                                            <label for="colFormLabel"
+                                                class="col-md col-form-label">ค่าภาษี/ประกัน</label>
+                                            <div class="col-md">
+                                                <p id="calT"></p>
+                                            </div>
+                                        </div>
+                                        <div class="form-group row">
+                                            <label for="colFormLabel"
+                                                class="col-md col-form-label">ค่าใช้จ่ายอื่นๆ</label>
+                                            <div class="col-md">
+                                                <p id="calE"></p>
+                                            </div>
+                                        </div>
+                                        <div class="form-group row">
+                                            <label for="colFormLabel"
+                                                class="col-md col-form-label">รวมค่าใช้จ่ายคงที่</label>
+                                            <div class="col-md">
+                                                <p id="calSum"></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary"
+                                            data-dismiss="modal">Close</button>
+                                        <button type="button" class="btn btn-primary">Understood</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="form-group row">
-                    <label for="colFormLabel" class="col-md col-form-label">ค่านายหน้า</label>
-                    <div class="col-md">
-                        <p id="calJ"></p>
+                <div class="card mb-4 shadow-sm">
+                    <div class="card-header">
+                        <h4 class="my-0 font-weight-normal">ค่าใช้จ่ายแปรผัน</h4>
                     </div>
-                </div>
-                <div class="form-group row">
-                    <label for="colFormLabel" class="col-md col-form-label">ค่าน้ำมันเชื้อเพลิง</label>
-                    <div class="col-md">
-                        <p id="calF"></p>
-                    </div>
-                </div>
-                <div class="form-group row">
-                    <label for="colFormLabel" class="col-md col-form-label">ค่าน้ำมันเครื่อง</label>
-                    <div class="col-md">
-                        <p id="calO"></p>
-                    </div>
-                </div>
-                <div class="form-group row">
-                    <label for="colFormLabel" class="col-md col-form-label">ค่าซ่อมแซมบำรุงและรักษา</label>
-                    <div class="col-md">
-                        <p id="calM"></p>
-                    </div>
-                </div>
-                <div class="form-group row">
-                    <label for="colFormLabel" class="col-md col-form-label">ค่าขนย้ายเครื่อง</label>
-                    <div class="col-md">
-                        <p id="calTs"></p>
-                    </div>
-                </div>
-                <div class="form-group row">
-                    <label for="colFormLabel" class="col-md col-form-label">รวมค่าใช้จ่ายแปลผัน</label>
-                    <div class="col-md">
-                        <p id="calV"></p>
-                    </div>
-                </div>
+                    <div class="card-body">
+                        <h1 class="card-title pricing-card-title" id="calSum"> <small class="text-muted">/ mo</small>
+                        </h1>
+                        <ul class="list-unstyled mt-3 mb-4">
+                            <li>10 users included</li>
+                            <li>2 GB of storage</li>
+                            <li>Email support</li>
+                            <li>Help center access</li>
+                        </ul>
+                        <!-- Button trigger modal -->
+                        <button type="button" class="btn btn-primary" data-toggle="modal"
+                            data-target="#staticBackdrop2">
+                            Launch static backdrop modal
+                        </button>
 
-                <div class="w3-bar">
-                    <button class="w3-button w3-left w3-light-grey" onclick="backform2()">&laquo; Previous</button>
-                    <button class="w3-button w3-right w3-green" onclick="nextform2()">Next &raquo;</button>
+                        <!-- Modal -->
+                        <div class="modal fade" id="staticBackdrop2" data-backdrop="static" data-keyboard="false"
+                            tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="staticBackdropLabel">ค่าใช้จ่ายแปรผัน</h5>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                    <div class="modal-body">
+                                    </div>
+                                    <div class="form-group row"></div>
+                                    <div class="form-group row">
+                                        <label for="colFormLabel"
+                                            class="col-md col-form-label">ค่าคนขับและดูแลเครื่อง</label>
+                                        <div class="col-md">
+                                            <p id="calL"></p>
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <label for="colFormLabel" class="col-md col-form-label">ค่านายหน้า</label>
+                                        <div class="col-md">
+                                            <p id="calJ"></p>
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <label for="colFormLabel"
+                                            class="col-md col-form-label">ค่าน้ำมันเชื้อเพลิง</label>
+                                        <div class="col-md">
+                                            <p id="calF"></p>
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <label for="colFormLabel" class="col-md col-form-label">ค่าน้ำมันเครื่อง</label>
+                                        <div class="col-md">
+                                            <p id="calO"></p>
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <label for="colFormLabel"
+                                            class="col-md col-form-label">ค่าซ่อมแซมบำรุงและรักษา</label>
+                                        <div class="col-md">
+                                            <p id="calM"></p>
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <label for="colFormLabel" class="col-md col-form-label">ค่าขนย้ายเครื่อง</label>
+                                        <div class="col-md">
+                                            <p id="calTs"></p>
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <label for="colFormLabel"
+                                            class="col-md col-form-label">รวมค่าใช้จ่ายแปลผัน</label>
+                                        <div class="col-md">
+                                            <p id="calV"></p>
+                                        </div>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary"
+                                            data-dismiss="modal">Close</button>
+                                        <button type="button" class="btn btn-primary">Understood</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card mb-4 shadow-sm">
+                    <div class="card-header">
+                        <h4 class="my-0 font-weight-normal">รายรับจากการจ้างเกียวข้าว</h4>
+                    </div>
+                    <div class="card-body">
+                        <h1 class="card-title pricing-card-title" id="calSum"> <small class="text-muted">/ mo</small>
+                        </h1>
+                        <div class="form-group row">
+                            <label for="colFormLabel" class="col-md col-form-label">ค่าจ้างเก็บเกี่ยวข้าว</label>
+                            <div class="col-md">
+                                <p id="calH"></p>
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="colFormLabel" class="col-md col-form-label">ระยะเวลาคืนทุน</label>
+                            <div class="col-md">
+                                <p id="calSum2"></p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="fixed w3-display-middle w3-white w3-padding" id="form3" style="width:65% ;display:none">
-                <div>
-                    <h1>รายรับจากการจ้างเกียวข้าว</h1>
-                </div>
-                <div class="form-group row"></div>
-                <div class="form-group row">
-                    <label for="colFormLabel" class="col-md col-form-label">ค่าจ้างเก็บเกี่ยวข้าว</label>
-                    <div class="col-md">
-                        <p id="calH"></p>
-                    </div>
-                </div>
-                <div class="form-group row">
-                    <label for="colFormLabel" class="col-md col-form-label">ระยะเวลาคืนทุน</label>
-                    <div class="col-md">
-                        <p id="calSum2"></p>
-                    </div>
-                </div>
-
-                <div class="w3-bar">
-                    <button class="w3-button w3-left w3-light-grey" onclick="backform3()">&laquo; Previous</button>
-                    <button class="w3-button w3-right w3-green" onclick="nextform3()">Next &raquo;</button>
-                </div>
-            </div>
-            <div class="fixed w3-display-middle w3-white w3-padding" id="form4" style="width:65% ;display:none">
-                <div class="form-group row">
-                    <label for="colFormLabel" class="col-md col-form-label">พื้นที่เก็บเกี่ยวนาปี</label>
-                    <div class="col-md">
-                        <input type="number" class="form-control" id="af" placeholder="ไร่">
-                    </div>
-                </div>
-                <div class="form-group row">
-                    <label for="colFormLabel" class="col-md col-form-label">พื้นที่เกี่ยวข้าวนาปรัง</label>
-                    <div class="col-md">
-                        <input type="number" class="form-control" id="as" placeholder="ไร่">
-                    </div>
-                </div>
-                <div class="form-group row">
-                    <label for="colFormLabel" class="col-md col-form-label">ค่าจ้างเก็บเกี่ยวข้าวนาปี</label>
-                    <div class="col-md">
-                        <input type="number" class="form-control" id="wf" placeholder="บาท/ไร่">
-                    </div>
-                </div>
-                <div class="form-group row">
-                    <label for="colFormLabel" class="col-md col-form-label">ค่าจ้างเก็บเกี่ยวข้าวนาปรัง</label>
-                    <div class="col-md">
-                        <input type="number" class="form-control" id="ws" placeholder="บาท/ไร่">
-                    </div>
-                </div>
-                <div class="form-group row">
-                    <label for="colFormLabel" class="col-md col-form-label">ความสามารถในการทำงานของเครื่อง</label>
-                    <div class="col-md">
-                        <input type="number" class="form-control" id="w" placeholder="ไร่/วัน">
-                        <p id="calD"></p>
-                        <p id="calIt"></p>
-                    </div>
-                </div>
-                <div class="w3-bar">
-                    <button class="w3-button w3-left w3-light-grey" onclick="backform4()">&laquo; Previous</button>
-                </div>
-            </div>
-        </div>
-    </main>
 </body>
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
     integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
