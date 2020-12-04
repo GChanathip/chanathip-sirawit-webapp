@@ -7,7 +7,7 @@
     <meta name="description" content="">
     <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
     <meta name="generator" content="Jekyll v4.1.1">
-    <title>Fixed top navbar example · Bootstrap</title>
+    <title>Agriculture</title>
 
     <link rel="canonical" href="https://getbootstrap.com/docs/4.5/examples/navbar-fixed/">
 
@@ -23,6 +23,19 @@
             -moz-user-select: none;
             -ms-user-select: none;
             user-select: none;
+        }
+
+        body {
+            background: url(img/wall2.jpg) no-repeat center center fixed;
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
+            position: fixed;
+        }
+
+        div.fixed {
+            position: fixed;
         }
 
         @media (min-width: 768px) {
@@ -62,18 +75,22 @@
             </div>
         </nav>
     </header>
-    <img src="img/wall2.jpg" class="w3-opacity-min " alt="">
+
 
     <main role="main">
-        <div class="w3-container w3-margin">
-            <div class="w3-display-middle w3-white w3-padding-large W3-margin" id="form1" style="width:65% ;display:block">
+        <div class="w3-container W3-margin">
+            <div class="fixed w3-display-middle w3-white w3-padding-large W3-margin" id="form1"
+                style="width:65% ;display:block">
                 <div class="form-group row">
                     <label for="inputRegion" class="col-md col-form-label">ภูมิภาคที่ต้องการจะเก็บเกี่ยว</label>
-                    <select name="inputRegion" class="col-md custom-select" id="region">
-                        <option value="1" selected>ภาคกลาง</option>
-                        <option value="2">ภาคอีสาน</option>
-                        <option value="3">ภาคเหนือ</option>
-                    </select>
+                    <div class="col-md">
+                        <select class="col-md custom-select" name="region" id="region">
+                            <option value="1">--เลือกภูมิภาค--</option>
+                            <option value="middle" id="middle">ภาคกลาง</option>
+                            <option value="northEast" id="northEast">ภาคอีสาน</option>
+                            <option value="north" id="north">ภาคเหนือ</option>
+                        </select>
+                    </div>
                 </div>
                 <div class="form-group row">
                     <label for="colFormLabel" class="col-md col-form-label">ราคาเครื่องจักร</label>
@@ -104,7 +121,7 @@
             </div>
 
             <!-- end Page1 display -->
-            <div class="w3-display-middle w3-white w3-padding" id="form2" style="width:65% ;display:none">
+            <div class="fixed w3-display-middle w3-white w3-padding" id="form2" style="width:65% ;display:none">
                 <br><br>
                 <div class="form-group row">
                     <label for="colFormLabel" class="col-md col-form-label">ค่าคนขับและดูแลเครื่อง</label>
@@ -185,7 +202,7 @@
                     <button class="w3-button w3-right w3-green" onclick="nextform2()">Next &raquo;</button>
                 </div>
             </div>
-            <div class="w3-display-middle w3-white w3-padding" id="form3" style="width:65% ;display:none">
+            <div class="fixed w3-display-middle w3-white w3-padding" id="form3" style="width:65% ;display:none">
                 <div class="form-group row">
                     <label for="colFormLabel" class="col-md col-form-label">พื้นที่เก็บเกี่ยวนาปี</label>
                     <div class="col-md">
