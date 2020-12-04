@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>AG Calculator</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+<style>
+body,h1,h2,h3,h4,h5 {font-family: "Poppins", sans-serif}
+body {font-size:16px;}
+.w3-half img{margin-bottom:-6px;margin-top:16px;opacity:0.8;cursor:pointer}
+.w3-half img:hover{opacity:1}
+
+body {
+  background-image:url('img/29dccc43042f848b64612243595262c5.jpg');
+  background-size: 120%;
+}
+
+label {
+  font-weight: bold;
+  font-size: 20px;
+  text-shadow: 2px 2px 2px black;
+  color: lawngreen;
+}
+
+h4 {
+  font-weight: bold;
+  text-shadow: 1px 1px;
+  font-size: 30px;
+  color: black;
+}
+
+h3{
+  font-weight: bold;
+  text-shadow: 1px 1px;
+}
+
+input[type=number], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type=submit] {
+  width: 20%;
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+a:link, a:visited {
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+
+a:hover, a:active {
+  background-color: green;
+}
+
+img{
+  border-radius: 100%;
+  border: 5px solid white;
+}
+
+</style>
+<body>
+  
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-green w3-collapse w3-top w3-large w3-padding" style="z-index:3;width:255px;font-weight:bold;" id="mySidebar"><br>
+  
+  <div class="w3-container">
+    <h3 ><b>AG<br>Calculator</b></h3>
+    <img src="/icon/icon.png" style="width:100%;margin:auto; display:block; text-align:center;">
+    <br>
+  </div>
+  <div class="w3-bar-block">
+    <a href="index.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Combine harvester</a> 
+    <a href="sugarcane.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Sugarcane Harvester</a> 
+    <a href="tractor.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Tractor</a>
+  </div>
+</nav>
+
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:340px;margin-right:40px">
+
+  <!-- Header -->
+  <a style="font-weight: bold;font-size: 30px;color: lawngreen;text-shadow: 2px 2px 2px black;">ข้อมูลค่าใช้จ่าย</a>
+  <br><br>
+  <div>
+  <form action="/action_page.php">
+    <label for="first">จำนวนน้ำมันเครื่องที่จะต้องเปลี่ยนในแต่ละครั้ง</label>
+    <br>
+    <input type="number" id="first" name="Fisrt" placeholder="ลิตร">
+    <br>
+
+    <label for="second">ราคาน้ำมันเครื่อง</label>
+    <br>
+    <input type="number" id="second" name="Second" placeholder="บาท/ลิตร">
+    <br>
+   
+    <label for="third">ค่าโรงเก็บเครื่อง</label>
+    <br>
+    <input type="number" id="third" name="Third" placeholder="บาท/ปี">
+    <br>
+    
+    <label for="forth">ค่าภาษี/ประกัน</label>
+    <br>
+    <input type="number" id="forth" name="Forth" placeholder="บาท/ปี">
+    <br>
+
+    <label for="country">ค่าใช้จ่ายอื่นๆ</label>
+    <br>
+    <input type="number" id="forth" name="Forth" placeholder="บาท/ปี">
+    <br>
+    <br>
+
+    
+
+    <a href="page4.html" >NEXT</a>
+    
+  </form>
+
+
+  
+    
+  </form>
+</div>
+
+
+
+
+</body>
+</html>
