@@ -57,27 +57,27 @@ function calFarmer(){
         sessionStorage.setItem("summ", sum);
 
         //ค่าคนขับและดูแลเครื่อง//
-        l = la*(af*as0)
+        l = la*(af*as)
         sessionStorage.setItem("ll", l);
 
         //ค่านายหน้า//
-        j = ja*(af+as0)
+        j = ja*(af+as)
         sessionStorage.setItem("jj", j);
 
         //ค่าน้ำมันเชื้อเพลิง//
-        f = fa*fc*(af+as0)
+        f = fa*fc*(af+as)
         sessionStorage.setItem("ff", f);
 
         //ค่าน้ำมันเครื่อง//
-        o = (ol/oa)*oc*(af+as0)
+        o = (ol/oa)*oc*(af+as)
         sessionStorage.setItem("oo", o);
 
         //ค่าซ่อมแซมและบำรุงรักษา//
-        m = mc*(af+as0) // MC ยังไม่ลง
+        m = mc*(af+as) // MC ยังไม่ลง
         sessionStorage.setItem("mm", m);
 
         //ค่าขนย้ายเครื่อง//
-        ts = tsa*(af+as0) // TSA ยังไม่มี
+        ts = tsa*(af+as) // TSA ยังไม่มี
         sessionStorage.setItem("tss", ts);
 
         //รวมค่าใช้จ่ายแปรผัน//
@@ -85,7 +85,7 @@ function calFarmer(){
         sessionStorage.setItem("vv", v);
         
         //ค่าจ้างเกี่ยวนวดข้าว//
-        h = (af*wf)+(as0*ws)
+        h = (af*wf)+(as*ws)
         sessionStorage.setItem("hh", h);
 
         //ระยะเวลาคืนทุน//
