@@ -59,8 +59,7 @@
             <div class="collapse navbar-collapse" id="navbarCollapse">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item active">
-                        <a class="nav-link" href="index.html">เครื่องเกี่ยวนวดข้าว <span
-                                class="sr-only">(current)</span></a>
+                        <a class="nav-link" href="index.html">เครื่องเกี่ยวนวดข้าว <span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">รถตัดอ้อยขนาดใหญ่</a>
@@ -230,13 +229,14 @@
                     <label for="colFormLabel" class="col-md col-form-label">ความสามารถในการทำงานของเครื่อง</label>
                     <div class="col-md">
                         <input type="number" class="form-control" id="w" placeholder="ไร่/วัน">
-                        <p id="calD"></p>
-                        <p id="calIt"></p>
+                        <p id="ss"></p>
+                        <p id="pp"></p>
+                        <p id="yy"></p>
                     </div>
                 </div>
                 <div class="w3-bar">
                     <button class="w3-button w3-left w3-light-grey" onclick="backform4()">&laquo; Previous</button>
-                    <button class="w3-button w3-right w3-green" id="myBtn">Submit &raquo;</button>
+                    <button class="w3-button w3-right w3-green" onclick="calFarmer()">Submit &raquo;</button>
                 </div>
             </div>
         </div>
@@ -249,13 +249,5 @@
 <script src="js/bootstrap.bundle.min.js"></script>
 <script src="js/nextform.js"></script>
 <script src="js/script1.js"></script> 
-<script src="js/click.js"></script>
-<script> 
-    var btn = document.getElementById("myBtn");
-     
-    // Assigning event listeners to the button
-    btn.addEventListener("click", calFarmer);
-    btn.addEventListener("click", clicks);
-</script>
 
 </html>
