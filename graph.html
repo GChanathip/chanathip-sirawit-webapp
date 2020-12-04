@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.min.js"
+        integrity="sha512-d9xgZrVZpmmQlfonhQUvTR7lMPtO7NkZMkA0ABN3PHCbKA5nqylQ/yWlFAyY6hYgdF1Qh6nYiuADWwKB4C2WSw=="
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container">
+        <canvas id="myChart"></canvas>
+    </div>
+    <script>
+        var ctx = document.getElementById("myChart");
+        var data = {
+            labels: [300,350, 400, 450, 500, 550, 600, 650, 700],
+            datasets: [
+            //     {
+            //     label: "f(x) = x",
+            //     function: function (x) { return x },
+            //     borderColor: "rgba(75, 192, 192, 1)",
+            //     data: [],
+            //     fill: false
+            // },
+            {
+                label: "f(x) = 332000 / (x-283.5)",
+                function: function (x) { return 332000 / (x-283.5) },
+                borderColor: "rgba(153, 102, 255, 1)",
+                data: [],
+                fill: false
+            },
+            // {
+            //     label: "f(x) = x * log(x)",
+            //     function: function (x) { return x * Math.log(x) },
+            //     borderColor: "rgba(255, 206, 86, 1)",
+            //     data: [],
+            //     fill: false
+            // }
+            ]
+        };
+
+        Chart.pluginService.register({
+            beforeInit: function (chart) {
+                var data = chart.config.data;
+                for (var i = 0; i < data.datasets.length; i++) {
+                    for (var j = 0; j < data.labels.length; j++) {
+                        var fct = data.datasets[i].function,
+                            x = data.labels[j],
+                            y = fct(x);
+                        data.datasets[i].data.push(y);
+                    }
+                }
+            }
+        });
+
+        var myBarChart = new Chart(ctx, {
+            type: 'line',
+            data: data,
+            options: {
+				responsive: true,
+				title: {
+					display: true,
+					text: 'วิเคราะห์จุดคุ้มทุน',
+                    fontSize :25
+				},
+                legend:{
+                    display: false
+                },
+				tooltips: {
+					mode: 'index',
+					intersect: false,
+				},
+				hover: {
+					mode: 'nearest',
+					intersect: true
+				},
+				scales: {
+					xAxes: [{
+						display: true,
+						scaleLabel: {
+							display: true,
+							labelString: 'อัตราค่าจ้างรับจ้างเกี่ยวนวด(บาท/ไร่)'
+						}
+					}],
+					yAxes: [{
+						display: true,
+						scaleLabel: {
+							display: true,
+							labelString: 'พื้นที่รับจ้างเกี่ยวนวดข้าวที่คุ้มทุน (ไร่)'
+						}
+					}]
+				}
+			}
+        });
+
+    </script>
+</body>
+
+</html>
