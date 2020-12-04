@@ -25,6 +25,10 @@
             user-select: none;
         }
 
+        body {
+            background: url(img/wall2.jpg) no-repeat center center fixed;
+        }
+
         @media (min-width: 768px) {
             .bd-placeholder-img-lg {
                 font-size: 3.5rem;
@@ -55,25 +59,25 @@
                         <a class="nav-link" href="#">เกี่ยวกับเรา</a>
                     </li>
                 </ul>
-                <!-- <form class="form-inline mt-2 mt-md-0">
-        <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
-        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-      </form> -->
             </div>
         </nav>
     </header>
     <img src="img/wall2.jpg" class="w3-opacity-min " alt="">
 
     <main role="main">
-        <div class="w3-container w3-margin">
-            <div class="w3-display-middle w3-white w3-padding-large W3-margin" id="form1" style="width:65% ;display:block">
+        <div class="w3-container W3-margin">
+            <div class="fixed w3-display-middle w3-white w3-padding-large W3-margin" id="form1"
+                style="width:65% ;display:block">
                 <div class="form-group row">
                     <label for="inputRegion" class="col-md col-form-label">ภูมิภาคที่ต้องการจะเก็บเกี่ยว</label>
-                    <select name="inputRegion" class="col-md custom-select" id="region">
-                        <option value="1" selected>ภาคกลาง</option>
-                        <option value="2">ภาคอีสาน</option>
-                        <option value="3">ภาคเหนือ</option>
-                    </select>
+                    <div class="col-md">
+                        <select class="col-md custom-select" name="region" id="region">
+                            <option value="1">--เลือกภูมิภาค--</option>
+                            <option value="middle" id="middle">ภาคกลาง</option>
+                            <option value="northEast" id="northEast">ภาคอีสาน</option>
+                            <option value="north" id="north">ภาคเหนือ</option>
+                        </select>
+                    </div>
                 </div>
                 <div class="form-group row">
                     <label for="colFormLabel" class="col-md col-form-label">ราคาเครื่องจักร</label>
@@ -100,12 +104,12 @@
                     </div>
                 </div>
                 <div class="w3-bar"></div>
-                <button class="w3-button w3-right w3-green" onclick="nextform1()">Next &raquo;</button>
+                <button class="w3-button w3-right w3-green" onclick="nextForm()">Next &raquo;</button>
             </div>
 
             <!-- end Page1 display -->
-            <div class="w3-display-middle w3-white w3-padding" id="form2" style="width:65% ;display:none">
-                <br><br>
+            <div class="fixed w3-display-middle w3-white w3-padding" id="form2" style="width:65% ;display:none">
+
                 <div class="form-group row">
                     <label for="colFormLabel" class="col-md col-form-label">ค่าคนขับและดูแลเครื่อง</label>
                     <div class="col-md">
@@ -137,6 +141,15 @@
                         <input type="number" class="form-control" id="oa" placeholder="ไร่">
                     </div>
                 </div>
+
+
+
+                <div class="w3-bar">
+                    <button class="w3-button w3-left w3-light-grey" onclick="backform2()">&laquo; Previous</button>
+                    <button class="w3-button w3-right w3-green" onclick="nextform2()">Next &raquo;</button>
+                </div>
+            </div>
+            <div class="fixed w3-display-middle w3-white w3-padding" id="form3" style="width:65% ;display:none">
                 <div class="form-group row">
                     <label for="colFormLabel"
                         class="col-md col-form-label">จำนวนน้ำมันเครื่องที่จะต้องเปลี่ยนในแต่ละครั้ง</label>
@@ -168,24 +181,13 @@
                         <input type="number" class="form-control" id="e" placeholder="บาท/ปี">
                     </div>
                 </div>
-                <div class="form-group row">
-                    <label for="colFormLabel" class="col-md col-form-label">อัตราใช้น้ำมันเชื้อเพลิง</label>
-                    <div class="col-md">
-                        <input type="number" class="form-control" id="fa" placeholder="ลิตร/ไร่">
-                    </div>
-                </div>
-                <div class="form-group row">
-                    <label for="colFormLabel" class="col-md col-form-label">ราคาน้ำมันเชื้อเพลิง</label>
-                    <div class="col-md">
-                        <input type="number" class="form-control" id="fc" placeholder="บาท/ลิตร">
-                    </div>
-                </div>
+
                 <div class="w3-bar">
-                    <button class="w3-button w3-left w3-light-grey" onclick="backform2()">&laquo; Previous</button>
-                    <button class="w3-button w3-right w3-green" onclick="nextform2()">Next &raquo;</button>
+                    <button class="w3-button w3-left w3-light-grey" onclick="backform3()">&laquo; Previous</button>
+                    <button class="w3-button w3-right w3-green" onclick="nextform3()">Next &raquo;</button>
                 </div>
             </div>
-            <div class="w3-display-middle w3-white w3-padding" id="form3" style="width:65% ;display:none">
+            <div class="fixed w3-display-middle w3-white w3-padding" id="form4" style="width:65% ;display:none">
                 <div class="form-group row">
                     <label for="colFormLabel" class="col-md col-form-label">พื้นที่เก็บเกี่ยวนาปี</label>
                     <div class="col-md">
@@ -214,11 +216,13 @@
                     <label for="colFormLabel" class="col-md col-form-label">ความสามารถในการทำงานของเครื่อง</label>
                     <div class="col-md">
                         <input type="number" class="form-control" id="w" placeholder="ไร่/วัน">
+                        <p id="calD"></p>
+                        <p id="calIt"></p>
                     </div>
                 </div>
                 <div class="w3-bar">
-                    <button class="w3-button w3-left w3-light-grey" onclick="backform3()">&laquo; Previous</button>
-                    <button class="w3-button w3-right w3-green">Submit &raquo;</button>
+                    <button class="w3-button w3-left w3-light-grey" onclick="backform4()">&laquo; Previous</button>
+                    <button class="w3-button w3-right w3-green" id="myBtn">Submit &raquo;</button>
                 </div>
             </div>
         </div>
@@ -229,31 +233,6 @@
     crossorigin="anonymous"></script>
 <script>window.jQuery || document.write('<script src="../assets/js/vendor/jquery.slim.min.js"><\/script>')</script>
 <script src="js/bootstrap.bundle.min.js"></script>
-<script>
-    function nextForm() {
-        var x = document.getElementById("form2");
-        if (x.className.indexOf("w3-show") == -1) {
-            x.className += " w3-show";
-        } else {
-            x.className = x.className.replace(" w3-show", "");
-        }
-    }
-    function nextform1() {
-        document.getElementById('form2').style.display = 'block';
-        document.getElementById('form1').style.display = 'none';
-    }
-    function nextform2() {
-        document.getElementById('form3').style.display = 'block';
-        document.getElementById('form2').style.display = 'none';
-    }
-    function backform2() {
-        document.getElementById('form2').style.display = 'none';
-        document.getElementById('form1').style.display = 'block';
-    }
-    function backform3() {
-        document.getElementById('form2').style.display = 'block';
-        document.getElementById('form3').style.display = 'none';
-    }
-</script>
+<script src="/js/nextform.js"></script>
 
 </html>
