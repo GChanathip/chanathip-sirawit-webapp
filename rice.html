@@ -27,7 +27,17 @@
 
         body {
             background: url(img/wall2.jpg) no-repeat center center fixed;
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
+            position: fixed;
         }
+
+        div.fixed {
+            position: fixed;
+        }
+
         @media (min-width: 768px) {
             .bd-placeholder-img-lg {
                 font-size: 3.5rem;
@@ -41,7 +51,7 @@
 <body>
     <header>
         <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
-            <a class="navbar-brand" href="#">Agriculture</a>
+            <a class="navbar-brand" href="index.html">Agriculture</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
                 aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -59,17 +69,25 @@
                         <a class="nav-link" href="#">เกี่ยวกับเรา</a>
                     </li>
                 </ul>
-
+                <!-- <form class="form-inline mt-2 mt-md-0">
+        <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+      </form> -->
             </div>
         </nav>
     </header>
 
 
-<<<<<<< HEAD
     <main role="main">
         <div class="w3-container W3-margin">
             <div class="fixed w3-display-middle w3-white w3-padding-large W3-margin" id="form1"
                 style="width:65% ;display:block">
+                <div>
+                    <h1>ข้อมูลทั่วไป</h1>
+                </div>
+                <div class="form-group row">
+                    
+                </div>
                 <div class="form-group row">
                     <label for="inputRegion" class="col-md col-form-label">ภูมิภาคที่ต้องการจะเก็บเกี่ยว</label>
                     <div class="col-md">
@@ -111,10 +129,12 @@
 
             <!-- end Page1 display -->
             <div class="fixed w3-display-middle w3-white w3-padding" id="form2" style="width:65% ;display:none">
-<<<<<<< HEAD
-=======
-
->>>>>>> chanathip
+                <div>
+                    <h1>ข้อมูลค่าใช้จ่าย</h1>
+                </div>
+                <div class="form-group row">
+                    
+                </div>
                 <div class="form-group row">
                     <label for="colFormLabel" class="col-md col-form-label">ค่าคนขับและดูแลเครื่อง</label>
                     <div class="col-md">
@@ -193,6 +213,12 @@
                 </div>
             </div>
             <div class="fixed w3-display-middle w3-white w3-padding" id="form4" style="width:65% ;display:none">
+                <div>
+                    <h1>ข้อมูลการทำงานในรอบปี (ประมาณการ)</h1>
+                </div>
+                <div class="form-group row">
+                    
+                </div>
                 <div class="form-group row">
                     <label for="colFormLabel" class="col-md col-form-label">พื้นที่เก็บเกี่ยวนาปี</label>
                     <div class="col-md">
@@ -202,7 +228,7 @@
                 <div class="form-group row">
                     <label for="colFormLabel" class="col-md col-form-label">พื้นที่เกี่ยวข้าวนาปรัง</label>
                     <div class="col-md">
-                        <input type="number" class="form-control" id="as" placeholder="ไร">
+                        <input type="number" class="form-control" id="as" placeholder="ไร่">
                     </div>
                 </div>
                 <div class="form-group row">
@@ -221,8 +247,6 @@
                     <label for="colFormLabel" class="col-md col-form-label">ความสามารถในการทำงานของเครื่อง</label>
                     <div class="col-md">
                         <input type="number" class="form-control" id="w" placeholder="ไร่/วัน">
-                        <p id="calD"></p>
-                        <p id="calIt"></p>
                     </div>
                 </div>
                 <div class="w3-bar">
@@ -232,10 +256,21 @@
             </div>
         </div>
     </main>
-=======
-    
->>>>>>> 300c585d9851a20fa4edce81890fc2ff6bdd2a53
 </body>
-
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+<script>window.jQuery || document.write('<script src="../assets/js/vendor/jquery.slim.min.js"><\/script>')</script>
+<script src="js/bootstrap.bundle.min.js"></script>
+<script src="js/nextform.js"></script>
+<script src="js/script1.js"></script> 
+<script src="js/click.js"></script>
+<script> 
+    var btn = document.getElementById("myBtn");
+     
+    // Assigning event listeners to the button
+    btn.addEventListener("click", calFarmer);
+    btn.addEventListener("click", clicks);
+</script>
 
 </html>
