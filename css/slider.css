@@ -1,0 +1,41 @@
+/*Chrome*/
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+    input[type='range'] {
+      overflow: hidden;
+      width: 120px;
+      -webkit-appearance: none;
+      background-image: linear-gradient(to right, #67d143, #81db3c, #9ae434, #b4ed2b, #cef521, #e1e906, #f1dc00, #ffcf00, #ffac14, #ff892a, #f6683b, #e34949);
+      /* background-image: url(/img/wall2.jpg); */
+    }
+    
+    input[type='range']::-webkit-slider-runnable-track {
+      height: 15px;
+      -webkit-appearance: none;
+      color: #13bba4;
+      margin-top: -1px;
+    }
+    
+    input[type='range']::-webkit-slider-thumb {
+      width: 10px;
+      -webkit-appearance: none;
+      height: 15px;
+      cursor: ew-resize;
+      background: #434343;
+      /* box-shadow: -120px 0 0 120px rgb(62, 223, 62); */
+    }
+
+}
+/** FF*/
+input[type="range"]::-moz-range-progress {
+  background-color: #43e5f7; 
+}
+input[type="range"]::-moz-range-track {  
+  background-color: #9a905d;
+}
+/* IE*/
+input[type="range"]::-ms-fill-lower {
+  background-color: #43e5f7; 
+}
+input[type="range"]::-ms-fill-upper {  
+  background-color: #9a905d;
+}
