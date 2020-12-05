@@ -1,24 +1,24 @@
 function calFarmer(){
-        var p = document.getElementById("p").value;
-        var s = document.getElementById("s").value;
-        var y = document.getElementById("y").value;
-        var i = document.getElementById("i").value;
-        var region = document.getElementById("region").value;
-        var g = document.getElementById("g").value;
-        var t = document.getElementById("t").value;
-        var e = document.getElementById("e").value;
-        var la = document.getElementById("la").value;
-        var as = document.getElementById("as").value;
-        var af = document.getElementById("af").value;
-        var ja = document.getElementById("ja").value;
-        var fa = document.getElementById("fa").value;
-        var fc = document.getElementById("fc").value;
-        var oa = document.getElementById("oa").value;
-        var ol = document.getElementById("ol").value;
-        var oc = document.getElementById("oc").value;      
-        var wf = document.getElementById("wf").value;
-        var ws = document.getElementById("ws").value;
-        var w = document.getElementById("w").value;
+        var p = parseInt(document.getElementById("p").value);
+        var s = parseInt(document.getElementById("s").value);
+        var y = parseInt(document.getElementById("y").value);
+        var i = parseInt(document.getElementById("i").value);
+        var region = parseInt(document.getElementById("region")).value;
+        var g = parseInt(document.getElementById("g").value);
+        var t = parseInt(document.getElementById("t").value);
+        var e = parseInt(document.getElementById("e").value);
+        var la = parseInt(document.getElementById("la").value);
+        var as = parseInt(document.getElementById("as").value);
+        var af = parseInt(document.getElementById("af").value);
+        var ja = parseInt(document.getElementById("ja").value);
+        var fa = parseInt(document.getElementById("fa").value);
+        var fc = parseInt(document.getElementById("fc").value);
+        var oa = parseInt(document.getElementById("oa").value);
+        var ol = parseInt(document.getElementById("ol").value);
+        var oc = parseInt(document.getElementById("oc").value);      
+        var wf = parseInt(document.getElementById("wf").value);
+        var ws = parseInt(document.getElementById("ws").value);
+        var w = parseInt(document.getElementById("w").value);
         
 
         mc = 0;
@@ -57,7 +57,7 @@ function calFarmer(){
         sessionStorage.setItem("summ", sum);
 
         //ค่าคนขับและดูแลเครื่อง//
-        l = la*(af*as)
+        l = la*(af+as);
         sessionStorage.setItem("ll", l);
 
         //ค่านายหน้า//
