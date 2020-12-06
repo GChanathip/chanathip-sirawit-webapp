@@ -29,7 +29,7 @@ region.addEventListener("change", function() {
       }
       document.getElementById("option-container").innerHTML = options
       document.getElementById("option-container").addEventListener("change", function () {
-        document.getElementById("amount-container").textContent = this.value
+      document.getElementById("amount-container").textContent = this.value
       })
     } else {
       // doc.data() will be undefined in this case

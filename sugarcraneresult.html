@@ -318,32 +318,24 @@
             </div>
         </div>
     </div><br>
-    <div id="factory-container" class="container bg-white">
-        <div class="row">
-            <div class="col">
+    <div id="factory-container" class="container bg-white w-25">
+        
                 <h2>เลือกภูมิภาค</h2>
-            </div>
-            <div class="col">
-                <select class="col-md custom-select w-75" name="region" id="region" >
+                <select class=" custom-select w-75 w3-margin" name="region" id="region" >
                     <option value="1">--เลือกภูมิภาค--</option>
                     <option value="central" id="central">ภาคกลาง</option>
                     <option value="northeast" id="northeast">ภาคอีสาน</option>
                     <option value="north" id="north">ภาคเหนือ</option>
                     <option value="east" id="east">ภาคตะวันออก</option>
                 </select>
-            </div>
-            <div class="col">
-                <p>ข้อมูลโรงงานน้ำตาล</p>
-                <select id="option-container">
+                <h2>ข้อมูลโรงงานน้ำตาล</h2>
+                <select id="option-container" class=" custom-select w-75 w3-margin">
                     <option value="1">--เลือกโรงงาน--</option>
+                    
                 </select>
-            </div>
-            <div class="col">
-                <p>ข้อมูลโรงงานน้ำตาล</p>
-                <p id="amount-container"></p>
-            </div>
-            <div class="row"></div>
-        </div>
+                <h2>จำนวนอ้อยเผาไหม้</h2>
+                <p id="amount-container" style="font-size: 20px ;"></p>
+            
     </div>
 </body>
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
@@ -356,5 +348,6 @@
 <script src="/js/slider.js"></script>
 <script src="js/gitItem2.js"></script>
 <script src="js/api.js"></script>
+
 
 </html>
