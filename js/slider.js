@@ -29,7 +29,7 @@ function calculate() {
   let s1 = parseInt(slider1.value);
   let s2 = parseInt(slider2.value);
   let s3 = parseInt(slider3.value);
-  cost = 190 * (1.1 - (0.2 * (s1 - 50) / 400)) * (1.0 + (0.2 * (s2 - 1) / 2)) * (1.1 - (0.2 * (s3 - 5) / 15))
+  cost = 190 * (1.2 - (0.4 * (s1 - 50) / 400)) * (1.0 + (0.2 * (s2 - 1) / 2)) * (1.1 - (0.2 * (s3 - 5) / 15))
 
   hiringPrice.innerHTML = cost.toFixed(2);
 }
