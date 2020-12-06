@@ -71,6 +71,10 @@ body {
     letter-spacing: -.05rem;
 }
 
+.container {
+    border-radius: 10px;
+}
+
 /* RESPONSIVE CSS
   -------------------------------------------------- */
 

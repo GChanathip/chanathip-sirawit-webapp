@@ -80,7 +80,7 @@
 
     <main role="main">
         <div class="w3-container W3-margin w3-opacity-min">
-            <div class="fixed w3-display-middle w3-white w3-padding-large W3-margin" id="form1"
+            <div class="container fixed w3-display-middle w3-white w3-padding-large W3-margin" id="form1"
                 style="width:65% ;display:block">
                 <div>
                     <h1>ข้อมูลทั่วไป</h1>
@@ -91,7 +91,7 @@
                 <div class="form-group row">
                     <label for="inputRegion" class="col-md col-form-label">ภูมิภาคที่ต้องการจะเก็บเกี่ยว</label>
                     <div class="col-md">
-                        <select class="col-md custom-select" name="region" id="region">
+                        <select class="col-md custom-select w-75" name="region" id="region">
                             <option value="1">--เลือกภูมิภาค--</option>
                             <option value="middle" id="middle">ภาคกลาง</option>
                             <option value="northEast" id="northEast">ภาคอีสาน</option>
@@ -101,26 +101,30 @@
                 </div>
                 <div class="form-group row">
                     <label for="colFormLabel" class="col-md col-form-label">ราคาเครื่องจักร</label>
-                    <div class="col-md">
-                        <input type="number" class="form-control" id="p" placeholder="บาท">
+                    <div class="col-md d-flex align-items-center">
+                        <input type="number" class="form-control w-75" id="p">
+                        <span class="m-1">บาท</span>
                     </div>
                 </div>
                 <div class="form-group row">
                     <label for="colFormLabel" class="col-md col-form-label">ราคาที่คาดว่าจะขายได้</label>
-                    <div class="col-md">
-                        <input type="number" class="form-control" id="s" placeholder="บาท">
+                    <div class="col-md d-flex align-items-center">
+                        <input type="number" class="form-control w-75 " id="s">
+                        <span class="m-1">บาท</span>
                     </div>
                 </div>
                 <div class="form-group row">
                     <label for="colFormLabel" class="col-md col-form-label">ระยะเวลาการใช้งาน</label>
-                    <div class="col-md">
-                        <input type="number" class="form-control" id="y" placeholder="ปี">
+                    <div class="col-md d-flex align-items-center">
+                        <input type="number" class="form-control w-75" id="y">
+                        <span class="m-1">ปี</span>
                     </div>
                 </div>
                 <div class="form-group row">
                     <label for="colFormLabel" class="col-md col-form-label">อัตราดอกเบี้ย</label>
-                    <div class="col-md">
-                        <input type="number" class="form-control" id="i" placeholder="ร้อยละ">
+                    <div class="col-md d-flex align-items-center">
+                        <input type="number" class="form-control w-75" id="i">
+                        <span class="m-1">ร้อยละ</span>
                     </div>
                 </div>
                 <div class="w3-bar"></div>
@@ -128,7 +132,7 @@
             </div>
 
             <!-- end Page1 display -->
-            <div class="fixed w3-display-middle w3-white w3-padding" id="form2" style="width:65% ;display:none">
+            <div class="container fixed w3-display-middle w3-white w3-padding" id="form2" style="width:65% ;display:none">
                 <div>
                     <h1>ข้อมูลค่าใช้จ่าย</h1>
                 </div>
@@ -137,33 +141,38 @@
                 </div>
                 <div class="form-group row">
                     <label for="colFormLabel" class="col-md col-form-label">ค่าคนขับและดูแลเครื่อง</label>
-                    <div class="col-md">
-                        <input type="number" class="form-control" id="la" placeholder="บาท/ไร่">
+                    <div class="col-md d-flex align-items-center">
+                        <input type="number" class="form-control w-75" id="la">
+                        <span class="m-1">บาท/ไร่</span>
                     </div>
                 </div>
                 <div class="form-group row">
                     <label for="colFormLabel" class="col-md col-form-label">ค่านายหน้า</label>
-                    <div class="col-md">
-                        <input type="number" class="form-control" id="ja" placeholder="บาท/ไร่">
+                    <div class="col-md d-flex align-items-center">
+                        <input type="number" class="form-control w-75" id="ja">
+                        <span class="m-1">บาท/ไร่</span>
                     </div>
                 </div>
                 <div class="form-group row">
                     <label for="colFormLabel" class="col-md col-form-label">อัตราใช้น้ำมันเชื้อเพลิง</label>
-                    <div class="col-md">
-                        <input type="number" class="form-control" id="fa" placeholder="ลิตร/ไร่">
+                    <div class="col-md d-flex align-items-center">
+                        <input type="number" class="form-control w-75" id="fa">
+                        <span class="m-1">ลิตร/ไร่</span>
                     </div>
                 </div>
                 <div class="form-group row">
                     <label for="colFormLabel" class="col-md col-form-label">ราคาน้ำมันเชื้อเพลิง</label>
-                    <div class="col-md">
-                        <input type="number" class="form-control" id="fc" placeholder="บาท/ลิตร">
+                    <div class="col-md d-flex align-items-center">
+                        <input type="number" class="form-control w-75" id="fc">
+                        <span class="m-1">บาท/ลิตร</span>
                     </div>
                 </div>
                 <div class="form-group row">
                     <label for="colFormLabel"
                         class="col-md col-form-label">รอบการเปลี่ยนน้ำมันเครื่องทุกการใช้งานกี่ไร่</label>
-                    <div class="col-md">
-                        <input type="number" class="form-control" id="oa" placeholder="ไร่">
+                    <div class="col-md d-flex align-items-center">
+                        <input type="number" class="form-control w-75" id="oa">
+                        <span class="m-1">ไร่</span>
                     </div>
                 </div>
 
@@ -174,36 +183,41 @@
                     <button class="w3-button w3-right w3-green" onclick="nextform2()">Next &raquo;</button>
                 </div>
             </div>
-            <div class="fixed w3-display-middle w3-white w3-padding" id="form3" style="width:65% ;display:none">
+            <div class="container fixed w3-display-middle w3-white w3-padding" id="form3" style="width:65% ;display:none">
                 <div class="form-group row">
                     <label for="colFormLabel"
                         class="col-md col-form-label">จำนวนน้ำมันเครื่องที่จะต้องเปลี่ยนในแต่ละครั้ง</label>
-                    <div class="col-md">
-                        <input type="number" class="form-control" id="ol" placeholder="ลิตร">
+                    <div class="col-md d-flex align-items-center">
+                        <input type="number" class="form-control w-75" id="ol">
+                        <span class="m-1">ลิตร</span>
                     </div>
                 </div>
                 <div class="form-group row">
                     <label for="colFormLabel" class="col-md col-form-label">ราคาน้ำมันเครื่อง</label>
-                    <div class="col-md">
-                        <input type="number" class="form-control" id="oc" placeholder="บาท/ลิตร">
+                    <div class="col-md d-flex align-items-center">
+                        <input type="number" class="form-control w-75" id="oc"">
+                        <span class="m-1">บาท/ลิตร</span>
                     </div>
                 </div>
                 <div class="form-group row">
                     <label for="colFormLabel" class="col-md col-form-label">ค่าโรงเก็บเครื่อง</label>
-                    <div class="col-md">
-                        <input type="number" class="form-control" id="g" placeholder="บาท/ปี">
+                    <div class="col-md d-flex align-items-center">
+                        <input type="number" class="form-control w-75" id="g"">
+                        <span class="m-1">บาท/ปี</span>
                     </div>
                 </div>
                 <div class="form-group row">
                     <label for="colFormLabel" class="col-md col-form-label">ค่าภาษี/ประกัน</label>
-                    <div class="col-md">
-                        <input type="number" class="form-control" id="t" placeholder="บาท/ปี">
+                    <div class="col-md d-flex align-items-center">
+                        <input type="number" class="form-control w-75" id="t">
+                        <span class="m-1">บาท/ปี</span>
                     </div>
                 </div>
                 <div class="form-group row">
                     <label for="colFormLabel" class="col-md col-form-label">ค่าใช้จ่ายอื่นๆ</label>
-                    <div class="col-md">
-                        <input type="number" class="form-control" id="e" placeholder="บาท/ปี">
+                    <div class="col-md d-flex align-items-center">
+                        <input type="number" class="form-control w-75" id="e">
+                        <span class="m-1">บาท/ปี</span>
                     </div>
                 </div>
 
@@ -212,7 +226,7 @@
                     <button class="w3-button w3-right w3-green" onclick="nextform3()">Next &raquo;</button>
                 </div>
             </div>
-            <div class="fixed w3-display-middle w3-white w3-padding" id="form4" style="width:65% ;display:none">
+            <div class="container fixed w3-display-middle w3-white w3-padding" id="form4" style="width:65% ;display:none">
                 <div>
                     <h1>ข้อมูลการทำงานในรอบปี (ประมาณการ)</h1>
                 </div>
@@ -221,37 +235,42 @@
                 </div>
                 <div class="form-group row">
                     <label for="colFormLabel" class="col-md col-form-label">พื้นที่เก็บเกี่ยวนาปี</label>
-                    <div class="col-md">
-                        <input type="number" class="form-control" id="af" placeholder="ไร่">
+                    <div class="col-md d-flex align-items-center">
+                        <input type="number" class="form-control w-75" id="af">
+                        <span class="m-1">ไร่</span>
                     </div>
                 </div>
                 <div class="form-group row">
                     <label for="colFormLabel" class="col-md col-form-label">พื้นที่เกี่ยวข้าวนาปรัง</label>
-                    <div class="col-md">
-                        <input type="number" class="form-control" id="as" placeholder="ไร่">
+                    <div class="col-md d-flex align-items-center">
+                        <input type="number" class="form-control w-75" id="as">
+                        <span class="m-1">ไร่</span>
                     </div>
                 </div>
                 <div class="form-group row">
                     <label for="colFormLabel" class="col-md col-form-label">ค่าจ้างเก็บเกี่ยวข้าวนาปี</label>
-                    <div class="col-md">
-                        <input type="number" class="form-control" id="wf" placeholder="บาท/ไร่">
+                    <div class="col-md d-flex align-items-center">
+                        <input type="number" class="form-control w-75" id="wf">
+                        <span class="m-1">บาท/ไร่</span>
                     </div>
                 </div>
                 <div class="form-group row">
                     <label for="colFormLabel" class="col-md col-form-label">ค่าจ้างเก็บเกี่ยวข้าวนาปรัง</label>
-                    <div class="col-md">
-                        <input type="number" class="form-control" id="ws" placeholder="บาท/ไร่">
+                    <div class="col-md  d-flex align-items-center">
+                        <input type="number" class="form-control w-75" id="ws" >
+                        <span class="m-1">บาท/ไร่</span>
                     </div>
                 </div>
                 <div class="form-group row">
                     <label for="colFormLabel" class="col-md col-form-label">ความสามารถในการทำงานของเครื่อง</label>
-                    <div class="col-md">
-                        <input type="number" class="form-control" id="w" placeholder="ไร่/วัน">
+                    <div class="col-md d-flex align-items-center">
+                        <input type="number" class="form-control w-75" id="w" >
+                        <span class="m-1">ไร่/วัน</span>
                     </div>
                 </div>
                 <div class="w3-bar">
                     <button class="w3-button w3-left w3-light-grey" onclick="backform4()">&laquo; Previous</button>
-                    <button class="w3-button w3-right w3-green" id="myBtn">Submit &raquo;</button>
+                    <button class="w3-button w3-right w3-green d-flex align-items-center" id="myBtn">Submit &raquo;</button>
                 </div>
             </div>
         </div>
