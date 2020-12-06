@@ -56,7 +56,7 @@ var myBarChart = new Chart(ctx, {
                 display: true,
                 scaleLabel: {
                     display: true,
-                    labelString: 'อัตราค่าจ้างรับจ้างเกี่ยวนวด(บาท/ไร่)'
+                    labelString: 'อัตราค่าจ้างรับจ้างเกี่ยวนวดข้าว(บาท/ไร่)'
                 }
             }],
             yAxes: [{
