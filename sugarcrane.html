@@ -1,5 +1,6 @@
 <!doctype html>
 <html lang="en">
+
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -11,7 +12,7 @@
     <!-- Bootstrap core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/w3.css">
-
+    <link rel="stylesheet" href="css/extra.css">
     <style>
         .bd-placeholder-img {
             font-size: 1.125rem;
@@ -71,19 +72,24 @@
     </header>
 
     <main role="main">
-        <div class="w3-container W3-margin  w3-opacity-min">
+<<<<<<< HEAD
+        <div class="w3-container W3-margin border">
+            <div class="container fixed w3-display-middle w3-white w3-padding-large W3-margin" id="form1"
+=======
+        <div class="w3-container W3-margin">
             <div class="fixed w3-display-middle w3-white w3-padding-large W3-margin" id="form1"
+>>>>>>> 6090e1a136144b7c5d4f170daf17122fe4b012fd
                 style="width:65% ;display:block">
                 <div>
                     <h1>ข้อมูลทั่วไป</h1>
                 </div>
                 <div class="form-group row">
-                    
+
                 </div>
                 <div class="form-group row">
                     <label for="inputRegion" class="col-md col-form-label">ภูมิภาคที่ต้องการจะเก็บเกี่ยว</label>
-                    <div class="col-md">
-                        <select class="col-md custom-select" name="region" id="region">
+                    <div class="col-md ">
+                        <select class="col-md custom-select w-75" name="region" id="region">
                             <option value="1">--เลือกภูมิภาค--</option>
                             <option value="middle" id="middle">ภาคกลาง</option>
                             <option value="northEast" id="northEast">ภาคอีสาน</option>
@@ -93,26 +99,31 @@
                 </div>
                 <div class="form-group row">
                     <label for="colFormLabel" class="col-md col-form-label">ราคาเครื่องแรกซื้อ</label>
-                    <div class="col-md">
-                        <input type="number" class="form-control" id="p" placeholder="บาท">
+                    <div class="col-md d-flex align-items-center">
+                        <input type="number" class="form-control w-75" id="p">
+                        <span class="m-1">บาท</span>
                     </div>
+
                 </div>
                 <div class="form-group row">
                     <label for="colFormLabel" class="col-md col-form-label">ราคาที่คาดว่าจะขายได้เมื่อเลิกใช้งาน</label>
-                    <div class="col-md">
-                        <input type="number" class="form-control" id="s" placeholder="บาท">
+                    <div class="col-md d-flex align-items-center">
+                        <input type="number" class="form-control w-75" id="s">
+                        <span class="m-1">บาท</span>
                     </div>
                 </div>
                 <div class="form-group row">
                     <label for="colFormLabel" class="col-md col-form-label">ระยะเวลาการใช้งาน</label>
-                    <div class="col-md">
-                        <input type="number" class="form-control" id="y" placeholder="ปี">
+                    <div class="col-md d-flex align-items-center">
+                        <input type="number" class="form-control w-75" id="y">
+                        <span class="m-1">ปี</span>
                     </div>
                 </div>
                 <div class="form-group row">
                     <label for="colFormLabel" class="col-md col-form-label">อัตราดอกเบี้ย</label>
-                    <div class="col-md">
-                        <input type="number" class="form-control" id="i" placeholder="ร้อยละ">
+                    <div class="col-md d-flex align-items-center">
+                        <input type="number" class="form-control w-75" id="i">
+                        <span class="m-1">ร้อยละ</span>
                     </div>
                 </div>
                 <div class="w3-bar"></div>
@@ -125,25 +136,28 @@
                     <h1>ข้อมูลค่าใช้จ่าย</h1>
                 </div>
                 <div class="form-group row">
-                    
+
                 </div>
 
                 <div class="form-group row">
                     <label for="colFormLabel" class="col-md col-form-label">ค่านายหน้า</label>
-                    <div class="col-md">
-                        <input type="number" class="form-control" id="j" placeholder="บาท/ปี">
+                    <div class="col-md d-flex align-items-center">
+                        <input type="number" class="form-control w-75" id="j" >
+                        <span class="m-1">บาท/ปี</span>
                     </div>
                 </div>
                 <div class="form-group row">
                     <label for="colFormLabel" class="col-md col-form-label">อัตราใช้น้ำมันเชื้อเพลิง</label>
-                    <div class="col-md">
-                        <input type="number" class="form-control" id="fa" placeholder="ลิตร/ไร่">
+                    <div class="col-md d-flex align-items-center">
+                        <input type="number" class="form-control w-75" id="fa">
+                        <span class="m-1">ลิตร/ไร่</span>
                     </div>
                 </div>
                 <div class="form-group row">
                     <label for="colFormLabel" class="col-md col-form-label">ราคาน้ำมันเชื้อเพลิง</label>
-                    <div class="col-md">
-                        <input type="number" class="form-control" id="fc" placeholder="บาท/ลิตร">
+                    <div class="col-md d-flex align-items-center">
+                        <input type="number" class="form-control w-75" id="fc">
+                        <span class="m-1">บาท</span>
                     </div>
                 </div>
 
@@ -155,20 +169,23 @@
             <div class="fixed w3-display-middle w3-white w3-padding" id="form3" style="width:65% ;display:none">
                 <div class="form-group row">
                     <label for="colFormLabel" class="col-md col-form-label">ค่าโรงเก็บเครื่อง</label>
-                    <div class="col-md">
-                        <input type="number" class="form-control" id="g" placeholder="บาท/ปี">
+                    <div class="col-md d-flex align-items-center">
+                        <input type="number" class="form-control w-75" id="g">
+                        <span class="m-1">บาท/ปี</span>
                     </div>
                 </div>
                 <div class="form-group row">
                     <label for="colFormLabel" class="col-md col-form-label">ค่าภาษี/ประกัน</label>
-                    <div class="col-md">
-                        <input type="number" class="form-control" id="t" placeholder="บาท/ปี">
+                    <div class="col-md d-flex align-items-center">
+                        <input type="number" class="form-control w-75" id="t">
+                        <span class="m-1">บาท/ปี</span>
                     </div>
                 </div>
                 <div class="form-group row">
                     <label for="colFormLabel" class="col-md col-form-label">ค่าใช้จ่ายอื่นๆ</label>
-                    <div class="col-md">
-                        <input type="number" class="form-control" id="e" placeholder="บาท/ปี">
+                    <div class="col-md d-flex align-items-center">
+                        <input type="number" class="form-control w-75" id="e">
+                        <span class="m-1">บาท/ปี</span>
                     </div>
                 </div>
 
@@ -182,30 +199,34 @@
                     <h1>ข้อมูลการทำงานในรอบปี (ประมาณการ)</h1>
                 </div>
                 <div class="form-group row">
-                    
+
                 </div>
                 <div class="form-group row">
                     <label for="colFormLabel" class="col-md col-form-label">ปริมาณงาน</label>
-                    <div class="col-md">
-                        <input type="number" class="form-control" id="af" placeholder="ตัน/">
+                    <div class="col-md d-flex align-items-center">
+                        <input type="number" class="form-control w-75" id="af">
+                        <span class="m-1">ตัน</span>
                     </div>
                 </div>
                 <div class="form-group row">
                     <label for="colFormLabel" class="col-md col-form-label">ค่าจ้างเก็บเกี่ยว</label>
-                    <div class="col-md">
-                        <input type="number" class="form-control" id="wf" placeholder="ตัน/ไร่">
+                    <div class="col-md d-flex align-items-center">
+                        <input type="number" class="form-control w-75" id="wf">
+                        <span class="m-1">ตัน/ไร่</span>
                     </div>
                 </div>
                 <div class="form-group row">
                     <label for="colFormLabel" class="col-md col-form-label">ปริมาณผลผลิต</label>
-                    <div class="col-md">
-                        <input type="number" class="form-control" id="ye" placeholder="ตัน/ไร่">
+                    <div class="col-md d-flex align-items-center">
+                        <input type="number" class="form-control w-75" id="ye">
+                        <span class="m-1">ตัน/ไร่</span>
                     </div>
                 </div>
                 <div class="form-group row">
                     <label for="colFormLabel" class="col-md col-form-label">พื้นที่เกี่ยวอ้อย</label>
-                    <div class="col-md">
-                        <input type="number" class="form-control" id="n" placeholder="ไร่">
+                    <div class="col-md d-flex align-items-center">
+                        <input type="number" class="form-control w-75" id="n">
+                        <span class="m-1">ไร่</span>
                     </div>
                 </div>
                 <div class="w3-bar">
@@ -222,11 +243,11 @@
 <script>window.jQuery || document.write('<script src="../assets/js/vendor/jquery.slim.min.js"><\/script>')</script>
 <script src="js/bootstrap.bundle.min.js"></script>
 <script src="js/nextform.js"></script>
-<script src="js/script1.js"></script> 
+<script src="js/script1.js"></script>
 <script src="js/click2.js"></script>
-<script> 
+<script>
     var btn = document.getElementById("myBtn");
-     
+
     // Assigning event listeners to the button
     btn.addEventListener("click", calFarmer);
     btn.addEventListener("click", clicks);
