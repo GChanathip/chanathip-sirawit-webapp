@@ -59,7 +59,7 @@
             </div>
         </nav>
     </header>
-    <div class="container" >
+    <div class="container">
         <div class="card-deck mb-3 text-center">
             <div class="card mb-4 shadow-sm">
                 <div class="card-header">
@@ -68,10 +68,11 @@
                 <div class="card-body">
                     <div class="form-group">
                         <i class='fas fa-money-bill' style='font-size:36px'></i>
-                        <label for="colFormLabel"
-                            class="col-md col-form-label"style="margin-top: 10px;">รวมค่าใช้จ่ายคงที่</label>
+                        <label for="colFormLabel" class="col-md col-form-label"
+                            style="margin-top: 10px;">รวมค่าใช้จ่ายคงที่</label>
                         <div class="col-md">
-                            <p id="calSum"></p>
+                            <h2 id="calSum"></h2>
+                            <span>บาท/ปี</span>
                         </div>
                     </div>
                     <!-- Button trigger modal -->
@@ -93,32 +94,47 @@
                                     <div class="form-group row">
                                         <label for="colFormLabel" class="col-md col-form-label">ค่าเสื่อมราคา</label>
                                         <div class="col-md">
-                                            <p id="calD"></p>
+                                            <div class="row">
+                                                <p id="calD"></p>
+                                                <span>บาท/ปี</span>
+                                            </div>
                                         </div>
                                     </div>
                                     <div class="form-group row">
                                         <label for="colFormLabel" class="col-md col-form-label">ค่าดอกเบี้ย</label>
                                         <div class="col-md">
-                                            <p id="calIt"></p>
+                                            <div class="row">
+                                                <p id="calIt"></p>
+                                                <span>บาท/ปี</span>
+                                            </div>
                                         </div>
                                     </div>
                                     <div class="form-group row">
                                         <label for="colFormLabel" class="col-md col-form-label">ค่าภาษี/ประกัน</label>
                                         <div class="col-md">
-                                            <p id="calT"></p>
+                                            <div class="row">
+                                                <p id="calT"></p>
+                                                <span>บาท/ปี</span>
+                                            </div>
                                         </div>
                                     </div>
                                     <div class="form-group row">
                                         <label for="colFormLabel"
                                             class="col-md col-form-label">ค่าโรงเก็บเครื่อง</label>
                                         <div class="col-md">
-                                            <p id="calG"></p>
+                                            <div class="row">
+                                                <p id="calG"></p>
+                                                <span>บาท/ปี</span>
+                                            </div>
                                         </div>
                                     </div>
                                     <div class="form-group row">
                                         <label for="colFormLabel" class="col-md col-form-label">ค่าใช้จ่ายอื่นๆ</label>
                                         <div class="col-md">
-                                            <p id="calE"></p>
+                                            <div class="row">
+                                                <p id="calE"></p>
+                                                <span>บาท/ปี</span>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -138,9 +154,11 @@
                 <div class="card-body">
                     <div class="form-group">
                         <i class='fas fa-dollar-sign' style='font-size:36px'></i>
-                        <label for="colFormLabel" class="col-md col-form-label" style="margin-top: 10px;">รวมค่าใช้จ่ายแปรผัน</label>
+                        <label for="colFormLabel" class="col-md col-form-label"
+                            style="margin-top: 10px;">รวมค่าใช้จ่ายแปรผัน</label>
                         <div class="col-md">
-                            <p id="calV"></p>
+                            <h2 id="calV"></h2>
+                            <span>บาท/ปี</span>
                         </div>
                     </div>
                     <!-- Button trigger modal -->
@@ -163,39 +181,39 @@
                                     <label for="colFormLabel"
                                         class="col-md col-form-label">ค่าคนขับและดูแลเครื่อง</label>
                                     <div class="col-md">
-                                        <p id="calL"></p>
+                                        <div class="row">
+                                            <p id="calL"></p>
+                                            <span>บาท/ปี</span>
+                                        </div>
                                     </div>
                                 </div>
                                 <div class="form-group row">
                                     <label for="colFormLabel" class="col-md col-form-label">ค่านายหน้า</label>
                                     <div class="col-md">
-                                        <p id="calJ"></p>
+                                        <div class="row">
+                                            <p id="calJ"></p>
+                                            <span>บาท/ปี</span>
+                                        </div>
                                     </div>
                                 </div>
-                                
+
                                 <div class="form-group row">
                                     <label for="colFormLabel" class="col-md col-form-label">ค่าน้ำมันเชื้อเพลิง</label>
                                     <div class="col-md">
-                                        <p id="calF"></p>
-                                    </div>
-                                </div>
-                                <div class="form-group row">
-                                    <label for="colFormLabel" class="col-md col-form-label">ค่าน้ำมันเครื่อง</label>
-                                    <div class="col-md">
-                                        <p id="calO"></p>
+                                        <div class="row">
+                                            <p id="calF"></p>
+                                            <span>บาท/ปี</span>
+                                        </div>
                                     </div>
                                 </div>
                                 <div class="form-group row">
                                     <label for="colFormLabel"
                                         class="col-md col-form-label">ค่าซ่อมแซมบำรุงและรักษา</label>
                                     <div class="col-md">
-                                        <p id="calM"></p>
-                                    </div>
-                                </div>
-                                <div class="form-group row">
-                                    <label for="colFormLabel" class="col-md col-form-label">ค่าขนย้ายเครื่อง</label>
-                                    <div class="col-md">
-                                        <p id="calTs"></p>
+                                        <div class="row">
+                                            <p id="calM"></p>
+                                            <span>บาท/ปี</span>
+                                        </div>
                                     </div>
                                 </div>
                                 <div class="modal-footer">
@@ -214,9 +232,11 @@
                 <div class="card-body">
                     <div class="form-group">
                         <i class='fas fa-hand-holding-usd' style='font-size:36px'></i>
-                        <label for="colFormLabel" class="col-md col-form-label" style="margin-top: 10px;">ค่าจ้างเก็บเกี่ยวข้าว</label>
+                        <label for="colFormLabel" class="col-md col-form-label"
+                            style="margin-top: 10px;">ค่าจ้างเก็บเกี่ยวข้าว</label>
                         <div class="col-md">
-                            <p id="calH"></p>
+                            <h2 id="calH"></h2>
+                            <span>บาท/ปี</span>
                         </div>
                     </div>
                 </div>
@@ -229,9 +249,11 @@
                 <div class="card-body">
                     <div class="form-group">
                         <i class='fas fa-chart-line' style='font-size:36px'></i>
-                        <label for="colFormLabel" class="col-md col-form-label" style="margin-top: 10px;">ระยะเวลาคืนทุน</label>
+                        <label for="colFormLabel" class="col-md col-form-label"
+                            style="margin-top: 10px;">ระยะเวลาคืนทุน</label>
                         <div class="col-md">
-                            <p id="calSum2"></p>
+                            <h2 id="calSum2"></h2>
+                            <span>ปี</span>
                         </div>
                     </div>
                 </div>
@@ -253,7 +275,7 @@
                 </select>
             </div>
         </div>
-        
+
         <div class="row">
             <div class="col">
                 <div class="row" style="margin-top: 20px;">
@@ -267,7 +289,8 @@
                 </div>
                 <div class="row align-items-center">
                     <div class="col">
-                        <h3>ปริมาณตอไม้</h3><p>1น้อย 2ปานกลาง 3มาก</p>
+                        <h3>ปริมาณตอไม้</h3>
+                        <p>1น้อย 2ปานกลาง 3มาก</p>
                     </div>
                     <div class="col">
                         <input type="range" min="1" max="3" value="1" step="1" class="w-75" id="myRange2">
@@ -286,7 +309,7 @@
             </div>
             <div class="col" style="text-align: center;margin-top: 30px;">
                 <h2><b>การประมาณค่าจ้างรถตัดอ้อย</b></้h2>
-                <h1 id="hiringPrice" style="margin-top: 20px;">190</h1><span>บาท/ตัน</span>
+                    <h1 id="hiringPrice" style="margin-top: 20px;">190</h1><span>บาท/ตัน</span>
             </div>
         </div>
     </div>
