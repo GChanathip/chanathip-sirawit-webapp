@@ -33,36 +33,36 @@ function calFarmer(){
 
     //ค่าเสื่อมราคา//
     d = (p-s)/y ;
-    sessionStorage.setItem("dd", d);
+    sessionStorage.setItem("dd", d.toFixed(2));
 
     //ค่าดอกเบี้ย//
     it = ((p-s)/2)*(i/100)
-    sessionStorage.setItem("itt", it);
+    sessionStorage.setItem("itt", it.toFixed(2));
 
     //ค่าโรงเก็บเครื่อง//
-    sessionStorage.setItem("gg", g);
+    sessionStorage.setItem("gg", g.toFixed(2));
 
     //ค่าภาษี/ประกัน//
-    sessionStorage.setItem("tt", t);
+    sessionStorage.setItem("tt", t.toFixed(2));
 
     //ค่าใช้จ่ายอื่นๆ//
-    sessionStorage.setItem("ee", e);
+    sessionStorage.setItem("ee", e.toFixed(2));
 
     //รวมค่าใช้จ่ายคงที่//
     sum = d+it+g+t+e
-    sessionStorage.setItem("summ", sum);
+    sessionStorage.setItem("summ", sum.toFixed(2));
     // ค่าใช้จ่ายแปรผัน
     //ค่าคนขับและดูแลเครื่อง//
     l = la/(ye/12)
-    sessionStorage.setItem("ll", l);
+    sessionStorage.setItem("ll", l.toFixed(2));
 
     //ค่านายหน้า//
     j = ja*(af)
-    sessionStorage.setItem("jj", j);
+    sessionStorage.setItem("jj", j.toFixed(2));
 
     //ค่าน้ำมันเชื้อเพลิง//
     f = fa/(ye/12)*fc*(ye)
-    sessionStorage.setItem("ff", f);
+    sessionStorage.setItem("ff", f.toFixed(2));
 
     // //ค่าน้ำมันเครื่อง//
     // o = (ol/oa)*oc*(af+as)
@@ -82,13 +82,13 @@ function calFarmer(){
     
     //ค่าจ้างเกี่ยวนวดข้าว//
     m = m/(ye/12)*ye
-    sessionStorage.setItem("mm", m);
+    sessionStorage.setItem("mm", m.toFixed(2));
 
     
-    sessionStorage.setItem("oo", o);
+    sessionStorage.setItem("oo", o.toFixed(2));
 
     h = (af*n)
-    sessionStorage.setItem("hh", h);
+    sessionStorage.setItem("hh", h.toFixed(2));
 
     //ระยะเวลาคืนทุน//
     sum2 = (p-s)/(h+it+g+t+e+v)
