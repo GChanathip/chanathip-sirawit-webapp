@@ -14,7 +14,6 @@ function calFarmer(){
     var wf = document.getElementById("wf").value;
     var fc = document.getElementById("ye").value;     
     var wf = document.getElementById("n").value;
-    let la = 9.93
     
 
     mc = 0;
