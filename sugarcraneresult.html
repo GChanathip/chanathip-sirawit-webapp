@@ -11,6 +11,8 @@
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/w3.css">
     <link rel="stylesheet" href="/css/slider.css">
+    <script src="https://www.gstatic.com/firebasejs/8.1.2/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.1.2/firebase-firestore.js"></script>
     <style>
         .bd-placeholder-img {
             font-size: 1.125rem;
@@ -181,8 +183,8 @@
                                     <label for="colFormLabel" class="col-md col-form-label">ค่าน้ำมันเครื่อง</label>
                                     <div class="col-md">
                                         <div class="row">
-                                        <p id="calO"></p>
-                                        <p> บาท/ปี</p>
+                                            <p id="calO"></p>
+                                            <p> บาท/ปี</p>
                                         </div>
                                     </div>
                                 </div>
@@ -190,8 +192,8 @@
                                     <label for="colFormLabel" class="col-md col-form-label">ค่าขนย้ายเครื่อง</label>
                                     <div class="col-md">
                                         <div class="row">
-                                        <p id="calTs"></p>
-                                        <p> บาท/ปี</p>
+                                            <p id="calTs"></p>
+                                            <p> บาท/ปี</p>
                                         </div>
                                     </div>
                                 </div>
@@ -316,13 +318,13 @@
             </div>
         </div>
     </div><br>
-    <div class="container bg-white">
+    <div id="factory-container" class="container bg-white">
         <div class="row">
             <div class="col">
                 <h2>เลือกภูมิภาค</h2>
             </div>
             <div class="col">
-                <select class="col-md custom-select w-75" name="region" id="region">
+                <select class="col-md custom-select w-75" name="region" id="region" >
                     <option value="1">--เลือกภูมิภาค--</option>
                     <option value="central" id="central">ภาคกลาง</option>
                     <option value="northeast" id="northeast">ภาคอีสาน</option>
@@ -332,7 +334,15 @@
             </div>
             <div class="col">
                 <p>ข้อมูลโรงงานน้ำตาล</p>
+                <select id="option-container">
+                    <option value="1">--เลือกโรงงาน--</option>
+                </select>
             </div>
+            <div class="col">
+                <p>ข้อมูลโรงงานน้ำตาล</p>
+                <p id="amount-container"></p>
+            </div>
+            <div class="row"></div>
         </div>
     </div>
 </body>
@@ -345,5 +355,6 @@
 <script src="js/getItem.js"></script>
 <script src="/js/slider.js"></script>
 <script src="js/gitItem2.js"></script>
+<script src="js/api.js"></script>
 
 </html>

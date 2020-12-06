@@ -12,4 +12,4 @@ document.getElementById("calM").innerHTML = sessionStorage.getItem("mm");
 document.getElementById("calTs").innerHTML = sessionStorage.getItem("tss");
 document.getElementById("calV").innerHTML = sessionStorage.getItem("vv");
 document.getElementById("calH").innerHTML = sessionStorage.getItem("hh");
-document.getElementById("calSum2").innerHTML = sessionStorage.getItem("summ2");s
+document.getElementById("calSum2").innerHTML = sessionStorage.getItem("summ2");
