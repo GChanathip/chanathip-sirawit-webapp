@@ -1,22 +1,22 @@
 function calFarmer(){
-    var p = document.getElementById("p").value;
-    var s = document.getElementById("s").value;
-    var y = document.getElementById("y").value;
-    var i = document.getElementById("i").value;
-    var region = document.getElementById("region").value;
-    var g = document.getElementById("g").value;
-    var t = document.getElementById("t").value;
-    var e = document.getElementById("e").value;
-    var af = document.getElementById("af").value;
-    var ja = document.getElementById("j").value;
-    var fa = document.getElementById("fa").value;
-    var fc = document.getElementById("fc").value;     
-    var wf = document.getElementById("wf").value;
-    var ye = document.getElementById("ye").value;     
-    var n = document.getElementById("n").value;
-    let la = 9.93;
+    var p = parseInt(document.getElementById("p").value);
+    var s = parseInt(document.getElementById("s").value);
+    var y = parseInt(document.getElementById("y").value);
+    var i = parseInt(document.getElementById("i").value);
+    var region = parseInt(document.getElementById("region").value);
+    var g = parseInt(document.getElementById("g").value);
+    var t = parseInt(document.getElementById("t").value);
+    var e = parseInt(document.getElementById("e").value);
+    var af = parseInt(document.getElementById("af").value);
+    var ja = parseInt(document.getElementById("j").value);
+    var fa = parseInt(document.getElementById("fa").value);
+    var fc = parseInt(document.getElementById("fc").value); 
+    var ye = parseInt(document.getElementById("ye").value);     
+    var n = parseInt(document.getElementById("n").value);
+    var la = 9.93;
     
-
+    o = 0;
+    m = 26.52;
     mc = 0;
     tsa = 0;
     
@@ -57,39 +57,45 @@ function calFarmer(){
     sessionStorage.setItem("ll", l);
 
     //ค่านายหน้า//
-    j = ja*(af+as)
+    j = ja*(af)
     sessionStorage.setItem("jj", j);
 
     //ค่าน้ำมันเชื้อเพลิง//
     f = fa/(ye/12)*fc*(ye)
     sessionStorage.setItem("ff", f);
 
-    //ค่าน้ำมันเครื่อง//
-    o = (ol/oa)*oc*(af+as)
-    sessionStorage.setItem("oo", o);
+    // //ค่าน้ำมันเครื่อง//
+    // o = (ol/oa)*oc*(af+as)
+    // sessionStorage.setItem("oo", o);
 
-    //ค่าซ่อมแซมและบำรุงรักษา//
-    m = mc/(ye/12)*ye // MC ยังไม่ลง
-    sessionStorage.setItem("mm", m);
+    // //ค่าซ่อมแซมและบำรุงรักษา//
+    // m = mc/(ye/12)*ye // MC ยังไม่ลง
+    // sessionStorage.setItem("mm", m);
 
     //ค่าขนย้ายเครื่อง//
-    ts = tsa*(af+as) // TSA ยังไม่มี
+    ts = 0; // TSA ยังไม่มี
     sessionStorage.setItem("tss", ts);
 
     //รวมค่าใช้จ่ายแปรผัน//
     v = l+j+f+o+m+ts
-    sessionStorage.setItem("vv", v);
+    sessionStorage.setItem("vv", v.toFixed(2));
     
-    // //ค่าจ้างเกี่ยวนวดข้าว//
-    // h = (af*wf)+(as*ws)
-    // sessionStorage.setItem("hh", h);
+    //ค่าจ้างเกี่ยวนวดข้าว//
+    m = m/(ye/12)*ye
+    sessionStorage.setItem("mm", m);
 
-    //ระยะเวลาคืนทุน//
-    sum2 = (p-s)/(h-it-g-t-e-v)
-    sessionStorage.setItem("summ2", sum2);
+    
+    sessionStorage.setItem("oo", o);
 
     h = (af*n)
     sessionStorage.setItem("hh", h);
+
+    //ระยะเวลาคืนทุน//
+    sum2 = (p-s)/(h+it+g+t+e+v)
+    sum22 = sum2.toFixed(2)
+    sessionStorage.setItem("summ2", sum22);
+
+    
 
     
 
