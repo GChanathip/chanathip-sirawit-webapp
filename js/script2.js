@@ -33,36 +33,36 @@ function calFarmer(){
 
     //ค่าเสื่อมราคา//
     d = (p-s)/y ;
-    sessionStorage.setItem("dd", d.toFixed(2));
+    sessionStorage.setItem("dd", d);
 
     //ค่าดอกเบี้ย//
     it = ((p-s)/2)*(i/100)
-    sessionStorage.setItem("itt", it.toFixed(2));
+    sessionStorage.setItem("itt", it);
 
     //ค่าโรงเก็บเครื่อง//
-    sessionStorage.setItem("gg", g.toFixed(2));
+    sessionStorage.setItem("gg", g);
 
     //ค่าภาษี/ประกัน//
-    sessionStorage.setItem("tt", t.toFixed(2));
+    sessionStorage.setItem("tt", t);
 
     //ค่าใช้จ่ายอื่นๆ//
-    sessionStorage.setItem("ee", e.toFixed(2));
+    sessionStorage.setItem("ee", e);
 
     //รวมค่าใช้จ่ายคงที่//
     sum = d+it+g+t+e
-    sessionStorage.setItem("summ", sum.toFixed(2));
+    sessionStorage.setItem("summ", sum);
     // ค่าใช้จ่ายแปรผัน
     //ค่าคนขับและดูแลเครื่อง//
     l = la/(ye/12)
-    sessionStorage.setItem("ll", l.toFixed(2));
+    sessionStorage.setItem("ll", l);
 
     //ค่านายหน้า//
     j = ja*(af)
-    sessionStorage.setItem("jj", j).toFixed(2);
+    sessionStorage.setItem("jj", j);
 
     //ค่าน้ำมันเชื้อเพลิง//
     f = fa/(ye/12)*fc*(ye)
-    sessionStorage.setItem("ff", f.toFixed(2));
+    sessionStorage.setItem("ff", f);
 
     // //ค่าน้ำมันเครื่อง//
     // o = (ol/oa)*oc*(af+as)
@@ -74,7 +74,7 @@ function calFarmer(){
 
     //ค่าขนย้ายเครื่อง//
     ts = 0; // TSA ยังไม่มี
-    sessionStorage.setItem("tss", ts.toFixed(2));
+    sessionStorage.setItem("tss", ts);
 
     //รวมค่าใช้จ่ายแปรผัน//
     v = l+j+f+o+m+ts
@@ -82,13 +82,13 @@ function calFarmer(){
     
     //ค่าจ้างเกี่ยวนวดข้าว//
     m = m/(ye/12)*ye
-    sessionStorage.setItem("mm", m.toFixed(2));
+    sessionStorage.setItem("mm", m);
 
     
     sessionStorage.setItem("oo", o);
 
     h = (af*n)
-    sessionStorage.setItem("hh", h.toFixed(2));
+    sessionStorage.setItem("hh", h);
 
     //ระยะเวลาคืนทุน//
     sum2 = (p-s)/(h+it+g+t+e+v)
