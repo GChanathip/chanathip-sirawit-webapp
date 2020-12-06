@@ -7,7 +7,9 @@ document.getElementById("calSum").innerHTML = sessionStorage.getItem("summ");
 document.getElementById("calL").innerHTML = sessionStorage.getItem("ll"); // driver = l (L)
 document.getElementById("calJ").innerHTML = sessionStorage.getItem("jj");
 document.getElementById("calF").innerHTML = sessionStorage.getItem("ff");
+document.getElementById("calO").innerHTML = sessionStorage.getItem("oo");
 document.getElementById("calM").innerHTML = sessionStorage.getItem("mm");
+document.getElementById("calTs").innerHTML = sessionStorage.getItem("tss");
 document.getElementById("calV").innerHTML = sessionStorage.getItem("vv");
 document.getElementById("calH").innerHTML = sessionStorage.getItem("hh");
-document.getElementById("calSum2").innerHTML = sessionStorage.getItem("summ2");
+document.getElementById("calSum2").innerHTML = sessionStorage.getItem("summ2");s
