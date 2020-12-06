@@ -22,29 +22,15 @@
         let h = sessionStorage.getItem("hh")
         var ctx = document.getElementById("myChart");
         var data = {
-            labels: [300,350, 400, 450, 500, 550, 600, 650, 700],
+            labels: [200, 250, 300, 350, 400, 450, 500, 550, 600,],
             datasets: [
-            //     {
-            //     label: "f(x) = x",
-            //     function: function (x) { return x },
-            //     borderColor: "rgba(75, 192, 192, 1)",
-            //     data: [],
-            //     fill: false
-            // },
             {
                 label: "f(x) = 332000 / (x-283.5)",
-                function: function (x) { return sum / (x-v) },
+                function: function (x) { return 332000 / (x-283.5) },
                 borderColor: "rgba(153, 102, 255, 1)",
                 data: [],
                 fill: false
-            },
-            // {
-            //     label: "f(x) = x * log(x)",
-            //     function: function (x) { return x * Math.log(x) },
-            //     borderColor: "rgba(255, 206, 86, 1)",
-            //     data: [],
-            //     fill: false
-            // }
+            }
             ]
         };
 
