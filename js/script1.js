@@ -89,7 +89,7 @@ function calFarmer(){
         sessionStorage.setItem("hh", h);
 
         //ระยะเวลาคืนทุน//
-        sum2 = (p-s)/(h-it-g-t-e-v)
+        sum2 = (p-s)/(h+it+g+t+e+v)
         sessionStorage.setItem("summ2", sum2);
 
         

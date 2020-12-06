@@ -1,14 +1,14 @@
-
-let sum = sessionStorage.getItem("summ");
-let v = sessionStorage.getItem("vv");
-let h = sessionStorage.getItem("hh")
+let sum = parseInt(sessionStorage.getItem("summ"));
+let v = parseInt(sessionStorage.getItem("vv"));
+console.log(sum);
+console.log(v);
 var ctx = document.getElementById("myChart");
 var data = {
     labels: [300, 350, 400, 450, 500, 550, 600, 650, 700],
     datasets: [
         {
-            label: "f(x) = 332000 / (x-283.5)",
-            function: function (x) { return sum / (x - v) },
+            label: "",
+            function: function (x) { return ((sum + v) / x) },
             borderColor: "rgba(153, 102, 255, 1)",
             data: [],
             fill: false
